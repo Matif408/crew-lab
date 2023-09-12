@@ -1,0 +1,12 @@
+<div class="navbar">
+    <div class="navbar__brand">
+        <div class="navbar__brand--img"></div>
+        <div class="navbar__brand--title"></div>
+    </div>
+    <div class="navbar__items">
+        <div class="navbar__items--item"></div>
+        <div class="navbar__items--item"></div>
+        <div class="navbar__items--item"></div>
+        <div class="navbar__items--item"></div>
+    </div>
+</div>
