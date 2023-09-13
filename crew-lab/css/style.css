@@ -278,7 +278,8 @@ h2{
     max-height: 75rem;
     /* background-color: yellow; */
     margin-inline:  auto;
-    /* margin-bottom: 10rem; */
+     margin-bottom: 12.5rem; 
+
 }
 .feature_description{
     text-align: center;
@@ -345,4 +346,104 @@ h2{
     font-style: normal;
     font-weight: 500;
     line-height: 2.4rem;
+}
+
+
+/* team section */
+.team{
+    max-width: 88rem;
+    max-height: 77rem;
+    /* background-color: yellow; */
+    margin-inline: auto;
+    margin-bottom: 12.5rem;
+}
+
+.team_titlebox{
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.team_text{
+    color: rgba(174, 175, 180, 0.50);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+}
+.team_heading{
+    color: #E6E6E6;
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.6rem;
+}
+.team_picture{
+    display: flex;
+    gap: 8rem;
+    margin-bottom: 8rem;
+}
+.team_picture2{
+    display: flex;
+    gap: 8rem;
+}
+.team_picturebox{
+    flex: 0 0 16rem;
+    text-align: center;
+    /* background-color: yellow; */
+}
+.img_person{
+    border-radius: 50%;
+    margin-bottom: 3.2rem;
+}
+.person_name{
+    color: #fff;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+}
+.person_title{
+    font-size: 1.4rem;
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem;
+    margin-bottom: .4rem;
+    opacity: 0.75;
+}
+.icon_inslink{
+    display: inline-block;
+    margin-right: 1.6rem;
+}
+
+
+/* sponsser */
+.sponser{
+    max-width: 74rem;
+    /* background-color: yellow; */
+    margin-inline: auto;
+}
+
+.sponser_text{
+    text-align: center;
+    color: rgba(174, 175, 180, 0.50);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+.sponser_logobox{
+    display: flex;
+    gap: 3.2rem;
+}
+
+.logo_textbox{
+    flex-basis: 16.6rem;
+    min-height: 6.4rem;
+    /* background-color: pink; */
+    
 }
