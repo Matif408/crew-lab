@@ -15,12 +15,19 @@
 html{
     font-size: 62.25%;
 }
+
+@media(max-width:1200px){
+    html{
+        font-size: 50%;
+    }
+}
 body{
     font-size: 1.6rem;
     
     font-family: "Satoshi", sans-serif;
     font-weight: 300;
     background-color: #000;
+    padding: 2.4rem 2.4rem;
 }
 a{
     display: inline-block;
@@ -38,7 +45,7 @@ button{
     
     height: 70rem;
     background-image: radial-gradient(50.45% 50.45% at 23% 30.16%, rgba(1, 9, 80, 0.90) 3.13%, rgba(14, 17, 32, 0.00) 100%);
-    
+    margin-bottom: 8rem;
 }
 
 /* decorative line */
@@ -104,7 +111,11 @@ button{
     margin-inline: auto;
     text-align: center;
 }
-
+@media(max-width:615px){
+    .content{
+        text-align: left;
+    }
+}
 h1 {
     font-size: 9.6rem;
     letter-spacing: -.8rem;
@@ -112,6 +123,12 @@ h1 {
     color: #fff;
     font-weight: 900;
     margin-bottom: 1.6rem;
+}
+@media(max-width:615px){
+    h1{
+        font-size: 5.4rem;
+        letter-spacing: -.3rem;
+    }
 }
 .fastest{
     background-image: linear-gradient(91deg, #36A6F6 51.47%, #0589E9 100%);
@@ -129,12 +146,22 @@ h1 {
     line-height: 3rem;
     margin-bottom: 3.2rem;
 }
+@media(max-width:615px){
+    .content_text{
+        font-size: 1.6rem;
+    }
+}
 
 .btntext_box{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2.8rem;
+}
+@media(max-width:615px){
+    .btntext_box{
+        justify-content: flex-start;
+    }
 }
 .btn{
     color: #fff;
@@ -162,13 +189,18 @@ h1 {
 /* .description section */
 .description{
     /* background-color: yellow; */
-    max-height: 70rem;
+    min-height: 70rem;
     max-width: 112rem;
     margin-inline: auto;
     /* padding: 7.6rem 16rem; */
     display: flex;
     gap: 7.8rem;
     margin-bottom: 12.5rem;
+}
+@media(max-width:935px){
+    .description{
+        flex-direction: column;
+    }
 }
 .description__text{
     display: flex;
@@ -177,6 +209,11 @@ h1 {
     align-items: flex-start;
     flex: 1;
 }
+@media(max-width:935px){
+    .description__text{
+        align-items: center;
+    }
+}
 .description__card{
     display: flex;
     flex-basis: 55%;
@@ -184,6 +221,8 @@ h1 {
     /* flex-direction: column; */
     
 }
+
+
 
 .description__cards{
     max-width: 28.5rem;
@@ -197,17 +236,49 @@ h1 {
     backdrop-filter: blur(2px);
     
 }
+@media(max-width:935px){
+    .description__card{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 .card-left{
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
 }
 
+
 .card3{
     margin-left: 2.4rem;
     align-self: center;
 }
+@media(max-width:935px){
+    .card-left{
+        flex-direction: row;
+        gap: 5.5rem;
+    }
+    .card3{
+        margin-left: 5.5rem;
 
+    
+    }
+}
+@media(max-width:840px){
+    .card3{
+        margin-top: 5.5rem;
+    }
+}
+
+@media(max-width:510px){
+    .card-left{
+        flex-direction: column;
+        gap: 5.5rem;
+    }
+    .card3{
+        margin-left: 0;
+    }
+}
 .iconbox{
     max-width: 9.1rem;
     min-height: 9.1rem;
@@ -249,6 +320,12 @@ h2{
     font-weight: 700;
     margin-bottom: 2.8rem;
 }
+@media(max-width:672px){
+    .description_heading{
+        font-size: 4rem;
+    }
+
+}
 .content_textcard{
     color: #AEAFB4;
     font-size: 1.6rem;
@@ -270,12 +347,17 @@ h2{
 
     
 }
+@media(max-width:500px){
+    .btn_card{
+        width: 100%;
+    }
+}
 
 
 /* feature section */
 .feature{
     max-width: 112rem;
-    max-height: 75rem;
+    min-height: 75rem;
     /* background-color: yellow; */
     margin-inline:  auto;
      margin-bottom: 12.5rem; 
@@ -285,6 +367,7 @@ h2{
     text-align: center;
     margin-bottom: 10rem;
 }
+
 .featur_description--text{
     color: rgba(174, 175, 180, 0.50);
     font-size: 1.2rem;
@@ -304,6 +387,7 @@ h2{
 
 }
 
+
 /* feature card */
 .feature_cardbox{
     /* background-color: yellow; */
@@ -311,13 +395,30 @@ h2{
     gap: 2.4rem;
     margin-bottom: 7.2rem;
 }
+@media(max-width:935px){
+    .feature_cardbox{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 .feature_cardbox2{
     display: flex;
     gap: 2.4rem;
 }
+@media(max-width:935px){
+    .feature_cardbox2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
 .feature_card{
     flex: 0 0 26.2rem;
+}
+@media(max-width:935px){
+    .feature_card{
+        flex-basis: 40rem;
+    }
 }
 .img-feature{
     margin-bottom: 2.4rem;
@@ -352,7 +453,7 @@ h2{
 /* team section */
 .team{
     max-width: 88rem;
-    max-height: 77rem;
+    min-height: 77rem;
     /* background-color: yellow; */
     margin-inline: auto;
     margin-bottom: 12.5rem;
@@ -385,14 +486,34 @@ h2{
     gap: 8rem;
     margin-bottom: 8rem;
 }
+@media(max-width:935px){
+    .team_picture{
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+}
 .team_picture2{
     display: flex;
     gap: 8rem;
 }
+@media(max-width:935px){
+    .team_picture2{
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+}
+
 .team_picturebox{
     flex: 0 0 16rem;
     text-align: center;
     /* background-color: yellow; */
+}
+@media(max-width:935px){
+    .team_picturebox{
+        flex: 0 0 32rem;
+    }
 }
 .img_person{
     border-radius: 50%;
@@ -441,9 +562,15 @@ h2{
     display: flex;
     gap: 3.2rem;
 }
+@media(max-width:935px){
+    .sponser_logobox{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
 .logo_textbox{
-    flex-basis: 16.6rem;
+    flex-basis: 16rem;
     min-height: 6.4rem;
     /* background-color: pink; */
     
@@ -458,8 +585,25 @@ h2{
     gap: 17.6rem;
     margin-bottom: 12.5rem;
 }
+@media(max-width:935px){
+    .contact{
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        gap: 4.8rem;
+    }
+    
+}
 .contact_description{
     flex: 0 0 40rem;
+}
+@media(max-width:935px){
+    
+    .contact_description{
+        align-self: center;
+        flex-basis: 0;
+    }
 }
 .contact_form{
     flex: 1;
@@ -536,13 +680,31 @@ h2{
     display: flex;
     margin-bottom: 4.7rem;
 }
+@media(max-width:935px){
+    .cta{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
 .cta_detail{
     flex-basis: 18.6rem;
     margin-right: 19rem;
 }
+@media(max-width:750px){
+    .cta_detail{
+        margin-bottom: 4.8rem;
+    }
+}
 .cta_menu{
     flex-basis: 40rem;
     /* margin-right: 5rem; */
+}
+@media(max-width:935px){
+    .cta_menu{
+        flex-basis: 50rem;
+        margin-bottom: 4.8rem;
+        
+    }
 }
 .cta_detail-logotext{
     display: flex;
@@ -641,6 +803,11 @@ h2{
     cursor: pointer ;
 
 }
+@media(max-width:935px){
+    .input_subcription{
+        margin-bottom: 4.8rem;
+    }
+}
 .input_btn{
     position: relative;
 }
@@ -665,6 +832,13 @@ h2{
     justify-content: space-between;
     padding-bottom: 2.4rem;
 }
+@media(max-width:935px){
+    .footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+}
 .footer_text{
     color: #AEAFB4;
     font-size: 1.6rem;
@@ -673,6 +847,11 @@ h2{
 .footer_linkbox{
     display: flex;
     
+}
+@media(max-width:935px){
+    .footer_linkbox{
+        margin-bottom: 2.4rem;
+    }
 }
 .footer_link{
     color: #AEAFB4;
