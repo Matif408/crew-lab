@@ -264,7 +264,7 @@ h1 {
     
     }
 }
-@media(max-width:840px){
+@media(max-width:810px){
     .card3{
         margin-top: 5.5rem;
     }
@@ -386,6 +386,13 @@ h2{
     line-height: 5.6rem;
 
 }
+@media(max-width:600px){
+    .heading_tertiary{
+        font-size: 3.2rem;
+        max-width: 34rem;
+        margin: 0 auto;
+    }
+}
 
 
 /* feature card */
@@ -399,6 +406,13 @@ h2{
     .feature_cardbox{
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+@media(max-width:720px){
+    .feature_cardbox{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 2.4rem;
     }
 }
 .feature_cardbox2{
@@ -418,6 +432,13 @@ h2{
 @media(max-width:935px){
     .feature_card{
         flex-basis: 40rem;
+    }
+}
+@media(max-width:720px){
+    .feature_cardbox2{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 2.4rem;
     }
 }
 .img-feature{
@@ -481,6 +502,11 @@ h2{
     font-weight: 700;
     line-height: 5.6rem;
 }
+@media(max-width:600px){
+    .team_heading{
+        font-size: 3.2rem;
+    }
+}
 .team_picture{
     display: flex;
     gap: 8rem;
@@ -493,6 +519,7 @@ h2{
         justify-content: center;
     }
 }
+
 .team_picture2{
     display: flex;
     gap: 8rem;
@@ -513,6 +540,11 @@ h2{
 @media(max-width:935px){
     .team_picturebox{
         flex: 0 0 32rem;
+    }
+}
+@media(max-width:600px){
+    .team_picturebox{
+        flex: 0 0 16rem;
     }
 }
 .img_person{
@@ -558,6 +590,11 @@ h2{
     line-height: 2.4rem;
     margin-bottom: 2.4rem;
 }
+@media(max-width:500px){
+    .sponser_text{
+        font-size: 1.6rem;
+    }
+}
 .sponser_logobox{
     display: flex;
     gap: 3.2rem;
@@ -566,6 +603,11 @@ h2{
     .sponser_logobox{
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+@media(max-width:400px){
+    .sponser_logobox{
+        gap: 1.8rem;
     }
 }
 
@@ -605,6 +647,11 @@ h2{
         flex-basis: 0;
     }
 }
+@media(max-width:600px){
+    .contact_description{
+        align-self: flex-start;
+    }
+}
 .contact_form{
     flex: 1;
 }
@@ -622,6 +669,11 @@ h2{
     font-style: normal;
     font-weight: 700;
     line-height: 5.6rem;
+}
+@media(max-width:600px){
+    .contact_heading{
+        font-size: 3.2rem;
+    }
 }
 .contact_formtext{
     color: #6A7986;
