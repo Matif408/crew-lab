@@ -42,29 +42,30 @@ button{
 
 /* header */
 .header{
-    
-    height: 70rem;
     background-image: radial-gradient(50.45% 50.45% at 23% 30.16%, rgba(1, 9, 80, 0.90) 3.13%, rgba(14, 17, 32, 0.00) 100%);
-    margin-bottom: 8rem;
 }
 
-/* decorative line */
-.line{
 
-}
+
 
 /* navigation */
 .nav{
     max-width: 112rem;
-    /* background-color: yellow; */
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
     margin-bottom: 19rem;
-
 }
+
+@media(max-width:600px){
+    .nav{
+        margin-bottom: 10rem;
+    }
+}
+
+
 .logo_box{
     display: flex;
     align-items: center;
@@ -103,19 +104,21 @@ button{
     margin-right: 2px;
 }
 
-
 /* content of discription */
 .content{
-    /* background-color: yellow; */
+   
     max-width: 80rem;
     margin-inline: auto;
     text-align: center;
+    margin-bottom: 22rem;
 }
 @media(max-width:615px){
     .content{
+        margin-bottom: 15rem;
         text-align: left;
     }
 }
+
 h1 {
     font-size: 9.6rem;
     letter-spacing: -.8rem;
@@ -139,8 +142,6 @@ h1 {
 .content_text{
     color: #E5E6ED;
     font-size: 2rem;
-    margin-inline: 0 auto;
-    max-width: 76rem;
     font-style: normal;
     font-weight: 500;
     line-height: 3rem;
@@ -155,7 +156,6 @@ h1 {
 .btntext_box{
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 2.8rem;
 }
 @media(max-width:615px){
@@ -171,28 +171,18 @@ h1 {
     cursor: pointer;
     line-height: normal;
     text-transform: capitalize;
+}
+.btn-background{
     background-image: linear-gradient(266deg, #2962FF -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
     padding: 1.2rem 2.4rem;
     border-radius: 4rem;
 }
-.btnside_text{
-    color: #fff;
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: capitalize;
-    line-height: normal;
-    cursor: pointer;
-}
 
 /* .description section */
 .description{
-    /* background-color: yellow; */
-    min-height: 70rem;
+    
     max-width: 112rem;
     margin-inline: auto;
-    /* padding: 7.6rem 16rem; */
     display: flex;
     gap: 7.8rem;
     margin-bottom: 12.5rem;
@@ -217,8 +207,7 @@ h1 {
 .description__card{
     display: flex;
     flex-basis: 55%;
-    /* background-color: white; */
-    /* flex-direction: column; */
+    
     
 }
 
@@ -226,8 +215,7 @@ h1 {
 
 .description__cards{
     max-width: 28.5rem;
-    max-height: 33rem;
-    /* background-color: green; */
+   
     text-align: center;
     padding: 4rem 3rem;
     border-radius: 1.2rem;
@@ -276,7 +264,7 @@ h1 {
         gap: 5.5rem;
     }
     .card3{
-        margin-left: 0;
+        margin-left: 2rem;
     }
 }
 .iconbox{
@@ -285,15 +273,13 @@ h1 {
     background-color: #34384C;
     border-radius: 50%;
     margin: 0 auto;
-    /* display: flex; */
-    /* justify-content: center; */
     margin-bottom: 4rem;
-    /* text-align: center; */
+   
 }
 .img_card{
-    /* background-size: contain; */
+    
     transform: translateY(2rem);
-    max-height: 4rem;
+  
     
 }
 h2{
@@ -347,7 +333,7 @@ h2{
 
     
 }
-@media(max-width:500px){
+@media(max-width:600px){
     .btn_card{
         width: 100%;
     }
@@ -357,10 +343,8 @@ h2{
 /* feature section */
 .feature{
     max-width: 112rem;
-    min-height: 75rem;
-    /* background-color: yellow; */
     margin-inline:  auto;
-     margin-bottom: 12.5rem; 
+    margin-bottom: 12.5rem; 
 
 }
 .feature_description{
@@ -397,7 +381,7 @@ h2{
 
 /* feature card */
 .feature_cardbox{
-    /* background-color: yellow; */
+    
     display: flex;
     gap: 2.4rem;
     margin-bottom: 7.2rem;
@@ -478,8 +462,7 @@ h2{
 /* team section */
 .team{
     max-width: 88rem;
-    min-height: 77rem;
-    /* background-color: yellow; */
+    
     margin-inline: auto;
     margin-bottom: 12.5rem;
 }
@@ -513,33 +496,24 @@ h2{
 }
 .team_picture{
     display: flex;
+    flex-wrap: wrap;
     gap: 8rem;
     margin-bottom: 8rem;
 }
 @media(max-width:935px){
     .team_picture{
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         gap: 2rem;
         justify-content: center;
     }
 }
 
-.team_picture2{
-    display: flex;
-    gap: 8rem;
-}
-@media(max-width:935px){
-    .team_picture2{
-        flex-wrap: wrap;
-        gap: 2rem;
-        justify-content: center;
-    }
-}
+
 
 .team_picturebox{
     flex: 0 0 16rem;
     text-align: center;
-    /* background-color: yellow; */
+    
 }
 @media(max-width:935px){
     .team_picturebox{
@@ -548,7 +522,7 @@ h2{
 }
 @media(max-width:600px){
     .team_picturebox{
-        flex: 0 0 16rem;
+        flex: 0 0 17rem;
     }
 }
 .img_person{
@@ -579,8 +553,7 @@ h2{
 
 /* sponsser */
 .sponser{
-    max-width: 74rem;
-    /* background-color: yellow; */
+   
     margin-inline: auto;
     margin-bottom: 12.5rem;
 }
@@ -602,6 +575,7 @@ h2{
 .sponser_logobox{
     display: flex;
     gap: 3.2rem;
+    justify-content: center;
 }
 @media(max-width:935px){
     .sponser_logobox{
@@ -617,8 +591,8 @@ h2{
 
 .logo_textbox{
     flex-basis: 16rem;
-    min-height: 6.4rem;
-    /* background-color: pink; */
+    
+   
     
 }
 
@@ -633,31 +607,37 @@ h2{
 }
 @media(max-width:935px){
     .contact{
-        /* flex-wrap: wrap; */
         flex-direction: column;
-        /* justify-content: center; */
-        /* align-items: center; */
         gap: 4.8rem;
     }
-    
 }
+
 .contact_description{
     flex: 0 0 40rem;
 }
+
 @media(max-width:935px){
-    
     .contact_description{
-        align-self: center;
-        flex-basis: 0;
+        flex: 0 0 0;
+        text-align: center;
     }
 }
 @media(max-width:600px){
     .contact_description{
-        align-self: flex-start;
+        text-align: start;
     }
 }
+
 .contact_form{
     flex: 1;
+}
+@media(max-width:935px){
+    .contact_form{
+        flex: 0;
+        max-width: 70rem;
+        margin-inline: auto;
+        width: 100%;
+    }
 }
 
 .contact_description-text{
@@ -675,11 +655,7 @@ h2{
     font-weight: 700;
     line-height: 5.6rem;
 }
-@media(max-width:600px){
-    .contact_heading{
-        font-size: 3.2rem;
-    }
-}
+
 .contact_formtext{
     color: #6A7986;
     font-size: 1.6rem;
@@ -702,17 +678,9 @@ h2{
     font-style: normal;
     
 }
-@media(max-width:935px){
-    .input-email{
-        width: 70%;
-    }
-}
 
-@media(max-width:600px){
-    .input-email{
-        width: 100%;
-    }
-}
+
+
 .input_message{
     width: 100%;
     height: 16rem;
@@ -728,17 +696,9 @@ h2{
     font-style: normal;
 
 }
-@media(max-width:935px){
-    .input_message{
-        width: 70%;
-    }
-}
 
-@media(max-width:600px){
-    .input_message{
-        width: 100%;
-    }
-}
+
+
 .btn_form{
     background-image: linear-gradient(266deg, #1B66F9 -0.27%, #1E68F6 -0.26%, #004BDB 98.59%);
     border-radius: 1.2rem;
@@ -749,16 +709,12 @@ h2{
     font-weight: 500;
     cursor: pointer;
 }
-@media(max-width:935px){
-    .btn_form{
-        display: block;
-    }
-}
+
 
 
 /* call to action */
 .cta{
-    /* background-color: yellow; */
+ 
     max-width: 112rem;
     margin-inline: auto;
     display: flex;
@@ -794,6 +750,7 @@ h2{
     display: flex;
     gap: .6rem;
     margin-bottom: 1.2rem;
+    align-items: center;
 }
 .cta_detailtext{
     color: #fff;
@@ -827,7 +784,7 @@ h2{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    /* gap: 2.4rem; */
+    
 }
 .list_item{
     flex-basis: 50%;
@@ -910,7 +867,7 @@ h2{
 /* footer */
 .footer{
     margin-inline: auto;
-    /* background-color: yellow; */
+    
     max-width: 112rem;
     display: flex;
     justify-content: space-between;
@@ -951,5 +908,5 @@ h2{
     font-weight: 400;
     margin-right: 1.6rem;
     text-align: center;
-    /* padding-bottom: 2.4rem; */
+    
 }
