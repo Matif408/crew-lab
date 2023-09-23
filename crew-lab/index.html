@@ -6,28 +6,39 @@
     <title>card Lab</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/satoshi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+
     <header class="header">
         <nav class="nav">
             <div class="logo_box">
-                <div class="img_logo">
-                    <img src="./image/crewlabs-02 1.png" alt="logo">
-                </div>
+                <img class="img_logo" src="./image/crewlabs-02 1.png" alt="logo">
                 <span class="logo_text">crew labs</span>
             </div>
+           <input type="checkbox" id="check">
+           <label for="check" class="open_menu"><i class="fa-solid fa-bars"></i></label>
             <div class="nav_box">
-                <a href="#" class="nav_item">cloud</a>
-                <a href="#" class="nav_item">enterprise</a>
-                <a href="#" class="nav_item">pricing</a>
-                <a href="#" class="nav_item">api & console</a>
-                <a href="#" class="nav_item">support</a>
+                <div class="navigation">
+                    <a href="#" class="nav_item">cloud</a>
+                    <a href="#" class="nav_item">enterprise</a>
+                    <a href="#" class="nav_item">pricing</a>
+                    <a href="#" class="nav_item">api & console</a>
+                    <a href="#" class="nav_item">support</a> 
+                </div>
+                
+
+                <div class="path">
+                    <span class="path_text">roadmap</span>
+                    <img src="./image/arrow.png" alt="icon">
+                    
+                    
+                </div>
+                <label for="check" class="close_menu"><i class="fa-solid fa-circle-xmark"></i></label>
             </div>
-    
-            <div class="path">
-                <span class="path_text">roadmap</span>
-                <img src="./image/arrow.png" alt="icon">
-            </div>
+            
+            
+            
             
         </nav>
         <section class="content">
@@ -36,11 +47,12 @@
                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years.
             </p>
             <div class="btntext_box">
-                <button class="btn">get start now</button>
-                <button class="btnside_text">develop's guide</button>
+                <button class="btn btn-background">get start now</button>
+                <button class="btn">develop's guide</button>
             </div>
         </section>
     </header>
+
     <section class="description">
         <div class="description__card">
             <div class="card-left">
@@ -188,9 +200,7 @@
                     <img src="./image/linkdinicon.png" alt="instagram">
                 </div>
             </div>
-        </div>
-
-        <div class="team_picture2">
+            
             <div class="team_picturebox">
                 <img src="./image/teamperson5.png" alt="person" class="img_person">
                 <p class="person_name">Cassey Fanesh</p>
@@ -227,7 +237,9 @@
                     <img src="./image/linkdinicon.png" alt="instagram">
                 </div>
             </div>
-        </div>
+          </div>
+
+      
     </section>
 
     <section class="sponser">
